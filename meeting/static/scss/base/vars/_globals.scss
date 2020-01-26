@@ -1,0 +1,60 @@
+$body-bg		: #eeeeee;
+$lightgray		: #f7f7f7;
+$gray			: #efefef;
+$box-shadow		: #cccccc;
+$darkgray		: #767676;
+$white 			: #ffffff;
+$black      	: #1b1c1d;
+$charcoal		: #12343f;
+$material-blue 	: #3894db;
+
+/* Old colors need to be replaced */
+
+$deepblue 		: #247ba0;
+$limegreen		: #00cc99;
+$sunflower		: #f1c40f;
+$brick		    : #e74c3c;
+$lightbg 		: rgba($deepblue, 0.1);
+
+
+/* New Colors */
+$red: #ff9068;
+$cyan: #0083a3;
+$blue: #2196f3;
+$green: #76a852;
+$amber: #ffc107;
+$orange: #ffb347;
+$indigo: #540d6e;
+$purple: #673ab7;
+$yellow: #ffe74c;
+$lavender: #be93c5;
+$turquoise: #60e1e0;
+
+$lightred: lighten($red, 20);
+$lightcyan: lighten($cyan, 60);
+$lightblue: lighten($blue, 35);
+$lightgreen: lighten($green, 40);
+$lightamber: lighten($amber, 35);
+$lightorange: lighten($orange, 25);
+$lightindigo: lighten($indigo, 70);
+$lightpurple: lighten($purple, 45);
+$lightyellow: lighten($yellow, 25);
+$lightlavender: lighten($lavender, 25);
+$lightturquoise: lighten($turquoise, 30);
+
+
+/* Border accents */
+$border-one		: #33658A;
+$border-two		: #86BBD8;
+$border-three	: #758E4F;
+$border-four	: #F6AE2D;
+$border-five	: #F26419;
+
+/* Box-Shadow */
+//$box-shadow: #777777;
+
+
+$vgap		: 24px;
+$hgap		: 18px;
+$z-index	: 9999;
+$font-stack	: 'Roboto', 'Open Sans', sans-serif;

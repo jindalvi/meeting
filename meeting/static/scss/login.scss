@@ -1,0 +1,32 @@
+body {
+	max-height: 90%;
+
+	background-color: lightgray;
+
+	header {
+		margin-bottom: 65px;
+
+		div.ui.fixed.top.attached.menu {
+			height:60px; 
+			margin:0;
+			background-color: #2E4A62; 
+		}
+		
+	}
+
+	form.ui.form {
+		position: absolute;
+		margin-top: 8%;
+		vertical-align: middle;
+		margin-left: 15%;
+		margin-right: 15%; 
+
+		background-color: white;
+		padding: 20px;
+
+		a {
+			color: white;
+		}
+	}
+
+}

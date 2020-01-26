@@ -1,0 +1,158 @@
+@media screen and (max-width: 991px) {
+
+	header {
+
+		div.ui.fluid.top.fixed.page-header {
+
+			z-index: 100!important;
+			background-color: #67b4f7;
+
+			a.ui.button {
+
+				&[data-type="homebutton"] {
+					margin-top: 15px;
+					margin-left: 15px;
+					margin-bottom: 12px !important;
+				}
+			}
+
+			div.right.menu {
+
+				div.ui.buttons {
+					margin: 10px !important;
+				}
+
+			}
+
+			.bottom {
+				position: fixed;
+				top: 45px;
+				width: 100%;
+				z-index: 999;
+				padding: $vgap/4;
+			}
+			
+		}
+
+
+	}
+	
+}
+
+@media screen and (min-width: 992px) {
+	
+	header {
+
+		div.ui.fluid.top.fixed.page-header {
+
+			z-index: 100!important;
+			background-color: #67b4f7;
+
+			a.ui.button {
+
+				&[data-type="homebutton"] {
+					
+					margin-top: 15px;
+					margin-left: 15px;
+					margin-bottom: 12px !important;
+				}
+			}
+
+			.right.menu {
+
+				div.ui.buttons {
+					margin: 10px !important;
+				}
+				
+				i.icon {
+					color: $white!important;
+					margin-right: 0!important;
+				}
+			
+				.notification-popup {
+					padding: 0rem;
+					width: 200px!important;
+
+					h5.no-notification-message {
+						text-align: center;
+						margin-top: 0!important;
+						padding: 1rem 0.25rem!important;
+					}
+					.notification-items {
+						padding: 1rem 0.5rem;
+						.notification-item {
+							overflow: hidden;
+							margin-bottom: 1rem;
+							&:not(:last-child) {
+								padding-bottom: 5px;
+								border-bottom: 1px solid $gray;
+							}
+							.notification-image {
+								float: left;
+								clear: none;
+								width: 36px;
+								img {
+									width: 32px;
+									height: 32px;
+									border-radius: 100%;
+								}
+							}
+							.notification-content {
+								float: left;
+								clear: none;
+								max-width: 145px;
+
+								h5.notification-text {
+									margin-bottom: 0.25rem!important;
+								}
+								div.notification-description {
+									opacity: 0.7;
+								}
+							}
+						}
+					}
+				}
+
+				img.app-icon {
+					width: 45px!important;
+				}
+				
+				.user-menu-items {
+					i.icon {
+						color: rgba(0,0,0,.87)!important;
+					}
+					.user-menu-item {
+						text-decoration: none;
+						color: rgba(0,0,0,.87)!important;
+						&:hover {
+							color: rgba(0,0,0,.87)!important;
+						}
+					}
+				}			
+			
+				.userdetails {
+					text-align: center;
+					padding-top: $vgap/4;
+					border-top: 1px solid rgba(34,36,38,.15);
+					border-bottom: 1px solid rgba(255,255,255,.1);
+					.small {
+						font-size: 0.8rem;
+						color: rgba(0,0,0, 0.6);
+						margin-bottom: $vgap/8;
+					}
+					.name {
+						font-weight: bold;
+						font-size: 0.8rem;
+						text-transform: uppercase;
+					}
+				}			
+
+			}
+
+			.bottom {
+				display: none!important;
+			}
+		}
+	}	
+
+}

@@ -1,0 +1,228 @@
+/* Old colors need to be replaced */
+/* New Colors */
+/* Border accents */
+/* Box-Shadow */
+@media screen and (max-width: 991px) {
+  header div.ui.fluid.top.fixed.page-header {
+    z-index: 100 !important;
+    background-color: #67b4f7; }
+    header div.ui.fluid.top.fixed.page-header a.ui.button[data-type="homebutton"] {
+      margin-top: 15px;
+      margin-left: 15px;
+      margin-bottom: 12px !important; }
+    header div.ui.fluid.top.fixed.page-header div.right.menu div.ui.buttons {
+      margin: 10px !important; }
+    header div.ui.fluid.top.fixed.page-header .bottom {
+      position: fixed;
+      top: 45px;
+      width: 100%;
+      z-index: 999;
+      padding: 6px; } }
+
+@media screen and (min-width: 992px) {
+  header div.ui.fluid.top.fixed.page-header {
+    z-index: 100 !important;
+    background-color: #67b4f7; }
+    header div.ui.fluid.top.fixed.page-header a.ui.button[data-type="homebutton"] {
+      margin-top: 15px;
+      margin-left: 15px;
+      margin-bottom: 12px !important; }
+    header div.ui.fluid.top.fixed.page-header .right.menu div.ui.buttons {
+      margin: 10px !important; }
+    header div.ui.fluid.top.fixed.page-header .right.menu i.icon {
+      color: #ffffff !important;
+      margin-right: 0 !important; }
+    header div.ui.fluid.top.fixed.page-header .right.menu .notification-popup {
+      padding: 0rem;
+      width: 200px !important; }
+      header div.ui.fluid.top.fixed.page-header .right.menu .notification-popup h5.no-notification-message {
+        text-align: center;
+        margin-top: 0 !important;
+        padding: 1rem 0.25rem !important; }
+      header div.ui.fluid.top.fixed.page-header .right.menu .notification-popup .notification-items {
+        padding: 1rem 0.5rem; }
+        header div.ui.fluid.top.fixed.page-header .right.menu .notification-popup .notification-items .notification-item {
+          overflow: hidden;
+          margin-bottom: 1rem; }
+          header div.ui.fluid.top.fixed.page-header .right.menu .notification-popup .notification-items .notification-item:not(:last-child) {
+            padding-bottom: 5px;
+            border-bottom: 1px solid #efefef; }
+          header div.ui.fluid.top.fixed.page-header .right.menu .notification-popup .notification-items .notification-item .notification-image {
+            float: left;
+            clear: none;
+            width: 36px; }
+            header div.ui.fluid.top.fixed.page-header .right.menu .notification-popup .notification-items .notification-item .notification-image img {
+              width: 32px;
+              height: 32px;
+              border-radius: 100%; }
+          header div.ui.fluid.top.fixed.page-header .right.menu .notification-popup .notification-items .notification-item .notification-content {
+            float: left;
+            clear: none;
+            max-width: 145px; }
+            header div.ui.fluid.top.fixed.page-header .right.menu .notification-popup .notification-items .notification-item .notification-content h5.notification-text {
+              margin-bottom: 0.25rem !important; }
+            header div.ui.fluid.top.fixed.page-header .right.menu .notification-popup .notification-items .notification-item .notification-content div.notification-description {
+              opacity: 0.7; }
+    header div.ui.fluid.top.fixed.page-header .right.menu img.app-icon {
+      width: 45px !important; }
+    header div.ui.fluid.top.fixed.page-header .right.menu .user-menu-items i.icon {
+      color: rgba(0, 0, 0, 0.87) !important; }
+    header div.ui.fluid.top.fixed.page-header .right.menu .user-menu-items .user-menu-item {
+      text-decoration: none;
+      color: rgba(0, 0, 0, 0.87) !important; }
+      header div.ui.fluid.top.fixed.page-header .right.menu .user-menu-items .user-menu-item:hover {
+        color: rgba(0, 0, 0, 0.87) !important; }
+    header div.ui.fluid.top.fixed.page-header .right.menu .userdetails {
+      text-align: center;
+      padding-top: 6px;
+      border-top: 1px solid rgba(34, 36, 38, 0.15);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+      header div.ui.fluid.top.fixed.page-header .right.menu .userdetails .small {
+        font-size: 0.8rem;
+        color: rgba(0, 0, 0, 0.6);
+        margin-bottom: 3px; }
+      header div.ui.fluid.top.fixed.page-header .right.menu .userdetails .name {
+        font-weight: bold;
+        font-size: 0.8rem;
+        text-transform: uppercase; }
+    header div.ui.fluid.top.fixed.page-header .bottom {
+      display: none !important; } }
+
+footer {
+  position: relative;
+  bottom: 0;
+  color: #ffffff !important;
+  background-color: black; }
+  footer div.hostelonease-logo {
+    width: 120px;
+    height: 60px;
+    margin: auto; }
+    footer div.hostelonease-logo img {
+      width: 100%;
+      height: 100%; }
+  footer .copyright {
+    font-size: 13.6px;
+    font-size: 0.85rem;
+    padding: 8px;
+    text-align: center;
+    color: #ffffff !important;
+    margin: 4px 12px 0 12px;
+    border-top: 1px solid #102d37; }
+  @media screen and (max-width: 991px) {
+    footer .links {
+      font-size: 0.75em; }
+    footer .copyright {
+      font-size: 0.7em; } }
+
+html, body {
+  height: 100%;
+  padding-top: 78px;
+  background-color: #60e1e0;
+  /* Styles for error pages */
+  /*
+	div.box {
+		width: 480px;
+		margin: auto;
+		max-width : 480px;
+		background-color: $orange;
+		box-shadow: 0 5px 8px $box-shadow;
+		
+		a.brand {
+			display: block;
+			padding: 0 $vgap/2;
+			background-color: rgba(0,0,0,0.4);
+			img {
+				height: 48px;
+			}
+		}
+		div.error { 
+			padding: $vgap/1.33;
+			
+			div.code {
+				font-size : 3.5em;
+				text-align: center;
+				padding-top: $vgap/2;
+				padding-bottom: $vgap/2;
+				color : rgba(0, 0, 0, 0.5);
+			}
+			
+			div.title {
+				font-size : 1.3em;
+				font-weight: bold; 
+				padding-top: $vgap/2;
+				padding-bottom: $vgap/2;
+				color : rgba(0, 0, 0, 0.4);
+			}
+
+			div.message{
+				font-size : 1.2em;
+				padding-top: $vgap/2;
+				margin-bottom : $vgap;
+				padding-bottom: $vgap/2;
+				color : rgba(0, 0, 0, 0.5);
+			}
+			a.button {
+				cursor: pointer;
+				//border-radius: 18px;
+			}
+		}
+		div.copyright {
+			padding: $vgap/2;
+			font-size: 0.85em;
+			text-align: center;
+			color: rgba(0, 0, 0, 0.7);
+		}
+	}*/
+  /* Slim scroll for */ }
+  html .uppercase, body .uppercase {
+    text-transform: uppercase !important; }
+  html div.box, body div.box {
+    position: relative;
+    margin: auto;
+    max-width: 480px;
+    -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
+    -webkit-transition: .3s ease-out;
+    transition: .3s ease-out;
+    background-color: #0083a3; }
+    html div.box:after, body div.box:after {
+      position: absolute;
+      top: 72px;
+      right: 50px;
+      opacity: 0.3;
+      font-size: 10em;
+      content: '\f071';
+      font-family: "Icons";
+      color: rgba(255, 255, 255, 0.7); }
+    html div.box div.title, body div.box div.title {
+      color: white;
+      font-weight: 200;
+      font-size: 2em;
+      line-height: 1em;
+      padding: 18.04511px;
+      border-bottom: 2px solid rgba(255, 255, 255, 0.3); }
+    html div.box div.message, body div.box div.message {
+      color: white;
+      font-size: 1.1em;
+      font-weight: 500;
+      padding: 18.04511px; }
+    html div.box div.button, body div.box div.button {
+      overflow: hidden;
+      padding: 12px;
+      background-color: white; }
+      html div.box div.button a.button, body div.box div.button a.button {
+        color: white;
+        -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
+                box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
+        -webkit-transition: .3s ease-out;
+        transition: .3s ease-out;
+        background-color: #ffc107; }
+  html *::-webkit-scrollbar, body *::-webkit-scrollbar {
+    width: 6px;
+    height: 4px; }
+  html *::-webkit-scrollbar-track, body *::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3); }
+  html *::-webkit-scrollbar-thumb, body *::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: darkgray;
+    outline: 1px solid #9c9c9c; }

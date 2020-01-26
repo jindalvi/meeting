@@ -1,0 +1,106 @@
+/// Mixin to prefix a property
+/// @param {String} $property - Property name
+/// @param {*} $value - Property value
+/// @param {List} $prefixes (()) - List of prefixes to print
+
+@mixin prefix($property, $value, $prefixes: ()) {
+	@each $prefix in $prefixes {
+		#{'-' + $prefix + '-' + $property}: $value;
+	}
+ 
+	// Output standard non-prefixed declaration
+	#{$property}: $value;
+}
+
+
+@mixin keyframe($animation-name) {
+	@-webkit-keyframes $animation-name {
+		@content;
+	}
+
+	@-moz-keyframes $animation-name {
+		@content;
+	}
+
+	@-o-keyframes $animation-name {
+		@content;
+	}
+
+	@keyframes $animation-name {
+		@content;
+	}
+}
+
+
+@mixin animation($str) {
+	-webkit-animation: #{$str};
+	-moz-animation: #{$str};
+	-ms-animation: #{$str};
+	-o-animation: #{$str};
+	animation: #{$str};
+}
+
+
+@mixin gradient($str) {
+	
+	@if $str == "dania" {
+		background: #BE93C5;  /* fallback for old browsers */
+		background: -webkit-linear-gradient(to right, #7BC6CC, #BE93C5);  /* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(to right, #7BC6CC, #BE93C5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	}
+
+	@if $str == "haikus" {
+		background: #fa7a6c;  /* fallback for old browsers */
+		background: -webkit-linear-gradient(to right, #ff9068, #fa7a6c);  /* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(to right, #ff9068, #fa7a6c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	}
+
+	@if $str == "blue" {
+		background: #56CCF2;  /* fallback for old browsers */
+		background: -webkit-linear-gradient(to right, #2F80ED, #56CCF2);  /* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(to right, #2F80ED, #56CCF2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	}
+
+	@if $str == "green" {
+		background: #76a852;  /* fallback for old browsers */
+		background: -webkit-linear-gradient(to right, #8DC26F, #76a852);  /* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(to right, #8DC26F, #76a852); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */		
+	}
+
+	@if $str == "seaweed" {
+		background: #4CB8C4;  /* fallback for old browsers */
+		background: -webkit-linear-gradient(to right, #3CD3AD, #4CB8C4);  /* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(to right, #3CD3AD, #4CB8C4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	}
+
+	@if $str == "aqua" {
+		background: #50C9C3;  /* fallback for old browsers */
+		background: -webkit-linear-gradient(to right, #96DEDA, #50C9C3);  /* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(to right, #96DEDA, #50C9C3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */		
+	}
+
+	@if $str == "purple" {
+		background: #DA22FF;  /* fallback for old browsers */
+		background: -webkit-linear-gradient(to right, #9733EE, #DA22FF);  /* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(to right, #9733EE, #DA22FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */	
+	}
+
+	@if $str == "orange" {
+		background: #ffb347;  /* fallback for old browsers */
+		background: -webkit-linear-gradient(to right, #ffcc33, #ffb347);  /* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(to right, #ffcc33, #ffb347); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */		
+	}
+
+	@if $str == "pink" {
+		//#ff758c → #ff7eb3 cfa8ca 64e5b2
+		background: #ff7eb3;  /* fallback for old browsers */
+		background: -webkit-linear-gradient(to right, #ff758c, #ff7eb3);  /* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(to right, #ff758c, #ff7eb3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */	
+	}
+
+}
+
+@mixin boxshadow() {
+	box-shadow: 0 3px 3px 0 rgba(0,0,0,0.14), 0 1px 7px 0 rgba(0,0,0,0.12), 0 3px 1px -1px rgba(0,0,0,0.2);
+	transition: .3s ease-out;
+}

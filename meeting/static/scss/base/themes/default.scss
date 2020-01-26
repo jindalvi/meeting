@@ -1,0 +1,93 @@
+@import "../../base/mixins";
+@import "../vars/default";
+
+/* Define pseudo classes with color options */
+
+
+html, body {
+	
+	margin: auto;
+	min-height: 100%;
+
+	.ui.solid.yellow.header {
+		background-color: $yellow!important;
+	}
+
+	.ui.solid.green.header {
+		background-color: $green!important;	
+	}
+
+	.ui.solid.red.header {
+		background-color: $red!important;	
+	}
+
+	.ui.solid.pine.header {
+		background-color: $pine!important;	
+	}
+
+	.minimalistic.segment {
+		border: 0px!important;
+		margin-top: 0em!important;
+		box-shadow: none!important;
+		border-radius: 0rem!important;
+	}
+
+
+	/* Notifier style rules */
+
+	.notify { 	
+		position: fixed;
+		padding: 10px;
+		top: 83px;
+		z-index: 5;
+		right: 25px;
+		width: 250px;
+		color: white;
+		border-radius: 3px;
+		perspective: 2001px;
+		background-color: #cf4040!important;
+		box-shadow: 0px 7px 10px 2px rgba(3, 3, 3, 0.4);
+
+		.type {
+			font-size: 1.2rem;
+			text-align: center;
+			padding: $hgap/3 $hgap;
+		}
+		.type.success {
+			background-color: #00cc99;
+		}
+
+		.type.error {
+			background-color: $red;
+		}
+
+		.type.toast {
+			background-color: $blue;
+		}
+
+		.message {
+			padding: $hgap;
+			color: $black!important;
+			background-color: #FFF!important;			
+		}
+	}
+	
+	.show-notify {
+		opacity: 1;
+		transform: translateY(80px);
+		-webkit-transition: all 1s ease;
+		-moz-transition: all 1s ease;
+		-o-transition: all 1s ease;
+		-ms-transition: all 1s ease;
+	}
+
+	.hide-notify {
+		opacity: 0;
+		transform: translateY(-80px);
+		-webkit-transition: all 1s ease;
+		-moz-transition: all 1s ease;
+		-o-transition: all 1s ease;
+		-ms-transition: all 1s ease;
+	}
+		
+}

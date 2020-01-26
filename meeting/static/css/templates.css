@@ -1,0 +1,85 @@
+/* Base Palette */
+/* Extra colors */
+/* Old colors need to be replaced */
+/* New Colors */
+/* Border accents */
+/* Box-Shadow */
+/* Old colors need to be replaced */
+/* New Colors */
+/* Border accents */
+/* Box-Shadow */
+html, body {
+  padding: 0;
+  margin: 12px;
+  font-family: Verdana, sans-serif; }
+  html body, body body {
+    background-color: white;
+    -webkit-box-shadow: 0px 0px 12px #acc;
+            box-shadow: 0px 0px 12px #acc; }
+  html header, body header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 24px;
+    background-color: #2196f3;
+    padding: 4px 12px; }
+    @media screen and (min-width: 992px) {
+      html header div.logo, body header div.logo {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        line-height: 1;
+        align-items: center;
+        vertical-align: middle;
+        -ms-flex-align: center;
+        padding: 4px 12px;
+        -webkit-box-align: center; }
+        html header div.logo img, body header div.logo img {
+          width: 45px; }
+      html header div.brand, body header div.brand {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        line-height: 1;
+        align-items: center;
+        vertical-align: middle;
+        -ms-flex-align: center;
+        padding: 4px 12px;
+        -webkit-box-align: center; }
+        html header div.brand img, body header div.brand img {
+          width: 100px; } }
+    @media screen and (max-width: 991px) {
+      html header div.logo, body header div.logo {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        line-height: 1;
+        align-items: center;
+        vertical-align: middle;
+        -ms-flex-align: center;
+        padding: 3px 8px;
+        -webkit-box-align: center; }
+        html header div.logo img, body header div.logo img {
+          width: 30px; }
+      html header div.brand, body header div.brand {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        line-height: 1;
+        align-items: center;
+        vertical-align: middle;
+        -ms-flex-align: center;
+        padding: 3px 8px;
+        -webkit-box-align: center; }
+        html header div.brand img, body header div.brand img {
+          width: 88px; } }
+  html div.content, body div.content {
+    padding: 24px;
+    font-size: 0.85em;
+    line-height: 1.5em;
+    color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 36px; }
+  html div.footer, body div.footer {
+    font-size: 0.75em;
+    color: rgba(0, 0, 0, 0.5);
+    padding: 4px 24px 24px 24px; }

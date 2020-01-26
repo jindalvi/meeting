@@ -1,0 +1,38 @@
+{% load static from staticfiles %}
+{% load i18n %}
+{% load l10n %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Progress</title>
+	<link rel="stylesheet" href="{% static 'vendor/semanticui/semantic.min.css' %}">
+	<link rel="stylesheet" href="{% static 'css/intermediate.min.css' %}">
+</head>
+<body>
+	<header>
+		<div class="ui fixed top borderless menu page-header">
+			<div class="left menu branding">
+				<a href="{% url 'common:login' %}" class="item">
+					<img class="brand-logo" src="{% static 'images/logos/brand-white.png' %}">
+				</a>
+			</div>
+		</div>
+	</header>
+	<div class="ui padded setting segment" data-client="{{ client }}">
+		<div class="icon">
+			<i class="large setting icon"></i>
+		</div>
+		<div class="message">
+			Setting up your tenant. Be Patient! You will be automatically redirected.
+		</div>
+	</div>
+	{% include "base/footer.html" %}
+</body>
+<script src="{% static 'vendor/jquery/jQuery.v3.1.1.min.js' %}"></script>
+<script src="{% static 'js/production/common/common.min.js' %}"></script>
+<script type="text/javascript">
+	Common.initialize("intermediate");
+</script>
+</html>

@@ -1,0 +1,193 @@
+@import "base/mixins";
+@import "base/vars/globals";
+
+form {
+	
+	.field {
+		position: relative;
+		margin-top: $vgap/1.25!important;
+		margin-bottom: $vgap/1.25!important;		
+		
+		::-webkit-input-placeholder { /* WebKit browsers */
+			color: $white!important;
+		}
+		
+		:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+		   color: $white!important;
+		   opacity:  1;
+		}
+		
+		::-moz-placeholder { /* Mozilla Firefox 19+ */
+		   color: $white!important;
+		   opacity:  1;
+		}
+		
+		:-ms-input-placeholder { /* Internet Explorer 10+ */
+		   color: $white!important;
+		}
+
+		label {
+			position: absolute;
+			top: -0.3em;
+			margin-bottom: 0;
+			transition: all 0.30s ease-in-out;
+			color: rgba(0, 0, 0, 0.5)!important;
+		}
+		
+		i.bottom-bar {
+			height: 2px;
+			display: block;
+			background-color: $gray;
+			
+			&::before {
+				width: 1px;
+				height: 2px;
+				content: '';
+				margin: auto;
+				display: block;
+				background-color: $gray;
+			}
+		
+			transition: all 0.25s ease;
+		
+		}
+
+		/* Materializing input types */
+
+		input[type="text"], input[type="password"], input[type="email"] {
+			
+			border: 0!important;
+			transition: all 0.30s ease-in-out;
+		}
+
+
+		input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, input.has-value {
+				~label {
+					position: absolute;
+					top: -1.15em;
+					color: $material-blue!important;
+					font-size: 0.8em!important;
+					transition: all 0.20s ease-in-out;
+				}
+				
+				~i.bottom-bar {
+					&::before {
+						width: 100%;
+						transition: all 0.25s ease;
+						background-color: lighten($material-blue, 15);
+					}
+				}
+		}
+		/*End of materializing input types*/
+
+		/* Materializing semantic dropdowns */
+		.ui.dropdown {
+			top: 1em;
+			margin-left: 2px;
+			border: none!important;
+			
+			~label {
+				position: absolute;
+				top: -0.30em;
+				transition: all 0.30s ease-in-out;
+				color: rgba(0, 0, 0, 0.5)!important;
+			}
+
+			~i.bottom-bar {
+				margin-top: 16.5px;
+			}
+
+			.menu {
+				max-height: 180px!important;
+				border-color: $gray!important;
+				
+				.item:hover {
+					background-color: #f1f1f1!important;
+				}
+
+			}
+
+			&.multiple {
+				
+				.ui.label {
+					font-weight: 500;
+					border-radius: 3px;
+					font-size: 0.9em!important;
+					box-shadow: none!important;
+					background-color: #f1f1f1!important;
+
+				}
+
+				~i.bottom-bar {
+					width: 100%;
+				}
+			}
+
+		}
+
+		.ui.dropdown:focus, .ui.dropdown.active.visible, .ui.dropdown.has-value {
+			~label {
+				position: absolute;
+				top: -1.15em;
+				font-size: 0.8em!important;
+				color: $material-blue!important;
+				transition: all 0.20s ease-in-out;
+			}
+			
+			~i.bottom-bar {
+				&::before {
+					width: 100%;
+					transition: all 0.25s ease;
+					background-color: lighten($material-blue, 15);
+				}
+			}				
+		}
+
+		/* End of materializing semantic dropdowns */
+
+		.sui-calendar {
+
+			input[type="text"] {
+				display: block!important;
+			}
+
+			label {
+				font-weight: 700;
+				font-size: 0.92857143em;
+			}
+
+		}
+
+		&.spaced {
+			margin-bottom: $vgap/1.25!important;
+		}
+
+		.ui.labeled.input.amount {
+			input[type=text] {
+				margin-top: 18px;
+			}
+			.ui.dropdown {
+				height: 36px;
+			}
+		}
+		
+	}
+
+	.required.field {
+		.sui-calendar {
+			label {
+				&:after {
+					content: '*';
+					color: #db2828;
+					margin: -.2em 0 0 .2em;
+				}
+			}
+		}
+	}	
+
+	.fields > .field {
+		margin-top: $vgap/3!important;
+		margin-bottom: $vgap/3!important;		
+	}
+
+}

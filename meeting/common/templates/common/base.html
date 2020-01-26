@@ -1,0 +1,23 @@
+{% extends "base/base.html" %}
+{% load static from staticfiles %}
+
+{% block css %}
+{% endblock css %}
+
+{% block content %}
+
+	<div class="meeting-wrapper">
+		{% block template %}
+		{% endblock template %}
+	</div>
+
+{% endblock %}
+
+{% block jsdependencies %}
+{% endblock jsdependencies %}
+
+
+{% block javascript %}
+	<script src="{% static 'js/production/common/common.min.js' %}"></script>
+	{% block pagejs %}{% endblock pagejs %}
+{% endblock javascript %}

@@ -1,0 +1,22 @@
+{% extends 'common/base.html' %}
+{% load static from staticfiles %}
+{% load i18n %}
+{% load l10n %}
+
+{% block title %} Landing {% endblock title %}
+
+{% block template %}
+
+<div class="ui hidden divider"></div>
+<div class="ui hidden divider"></div>
+<div class="ui message">
+	This is the starting page
+</div>
+
+{% endblock template %}
+
+{% block pagejs %}
+	<script type="text/javascript">
+		Common.initialize("login");
+	</script>
+{% endblock pagejs %}
